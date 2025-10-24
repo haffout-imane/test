@@ -1,0 +1,16 @@
+### HELLO WORLD
+GET http://localhost:3000/ HTTP/1.1
+content-type: application/json
+
+### LOGIN
+POST http://localhost:3000/auth/login HTTP/1.1
+content-type: application/json
+
+{
+	"email": "hatim@gmail.com",
+	"password": "hatimtouil"
+}
+
+### GET ME
+GET http://localhost:3000/auth/me HTTP/1.1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOjEsImVtYWlsIjoiaGF0aW1AZ21haWwuY29tIiwiaWF0IjoxNzYxMzEwODEwLCJleHAiOjE3NjEzMTQ0MTB9.CqaRwtB-DoCwX6sdQ_Ekzfk4Eu0_8eVgYNlFKcXVLds

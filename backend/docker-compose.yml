@@ -1,0 +1,17 @@
+version: '3.8'
+services:
+  postgres:
+    image: postgres:16
+    container_name: DNSee
+    restart: always
+    environment:
+      POSTGRES_USER: DNSee_User
+      POSTGRES_PASSWORD: DNSee123
+      POSTGRES_DB: DNSee
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/DNSee
+
+volumes:
+  postgres_data:

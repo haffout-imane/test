@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Login Example</title>
+  </head>
+  <body>
+    <div id="login-page">
+      <h2>Login</h2>
+      <form id="login-form">
+        <label>
+          Email:
+          <input value="hatim@gmail.com" type="email" name="email" required /> </label
+        ><br />
+        <label>
+          Password:
+          <input value="hatimtouil" type="password" name="password" required /> </label
+        ><br />
+        <button type="submit">Login</button>
+      </form>
+      <div id="login-error" style="color: red"></div>
+    </div>
+
+    <div id="hello-page" style="display: none">
+      <h2>Hello <span id="username"></span></h2>
+      <button id="logout-btn">Logout</button>
+    </div>
+		<script src="app.js" type="module"></script>
+  </body>
+</html>
